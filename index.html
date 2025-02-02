@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./rcponcive.css">
+</head>
+<body>
+
+    <header>
+        <nav> 
+
+            <a href=""><img class="logo" src="./image/logo.png" alt=""></a>
+            
+           <i id="toggleMenu"><i class="fa-solid fa-bars"></i></i>
+     
+
+           <div  class=" menu">
+           
+          
+           </div>
+           
+            <div class="nav-ul">
+            
+             <ul>
+                <li>
+                    
+                    <a id="dropown-chek" href="./rvs/rvs.html">RVs</a>
+                 
+                    <ul class="dropdown">
+                        <li><a href="#">EuroCamper</a></li>
+                        <li><a href="#">vanagon</a></li>
+                        <li><a href="#">Ranger van</a></li>
+                        <li><a href="#">Travel Triler</a></li>
+                        <li><a href="#">Flying Cloud</a></li>
+                        <li><a href="#">MotorHome</a></li>
+                    </ul>
+                </li>  
+
+                <li><a href="./RoadTrip/road.html">Road Trips</a></li>
+                <li><a href="./FAQ/faq.html">FAQ</a></li>
+                <li><a href="./About/about.html">About</a></li>
+            </ul>
+
+            <div id="myNav" class="overlay">
+              
+             <div class="overlay-btn-title">
+                <span class="camper-check-btn">CHeck Availability</span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             </div>
+                <div class="overlay-content">
+
+                         <span class="travel-first">Travel Details</span>
+               
+                    <form class="form-btn" action="">
+                     <div class="wrapper-for-form">
+                        <div class="select-wrapper">
+                        <div class="pick-up">
+                        
+                        <label for="nav-select">Pick up*</label>
+                        <select class="nav-select back-color">
+                            <option value=""></option>
+                            <option>San Diego</option>
+                            <option>malibu Beach</option>
+                            <option>Misson Bay</option>
+                            <option>Napa Valley</option>
+                        </select>
+                    </div>
+                         
+                    <div class="drop-off">
+                        <label for="nav-select ">Drop Off*</label>
+                        <select class="nav-select back-color">
+                            <option value=""></option>
+                            <option>San Diego</option>
+                            <option>malibu Beach</option>
+                            <option>Misson Bay</option>
+                            <option>Napa Valley</option>
+                        </select>
+                    </div>   
+                    </div>
+                         
+                      <div class="date">
+                         <div class="for-date">
+                        <label for="date">Start Date*</label>
+                        <input class="back-color" name="date" type="date">
+                         </div>
+                         
+                         <div class="for-date">
+                        <label for="date">End Date*</label>
+                        <input class="back-color" name="date" type="date">
+                         </div>
+                      </div>
+                         
+
+
+                       <div class="number">
+                            <div class="for-number">
+                                <label for="number">Number of passenger*</label>
+                                <input class="back-color" name="number" type="number">
+                            </div>
+
+                         <div class="for-number-rvs">
+                            <label class="rvs-one" for="rvs">Rv Type</label>
+                            <select class="back-color"  name="rvs" id="">
+                                <option value=""></option>
+                                <option value="">EuroCamper</option>
+                                <option value="">Vanagon</option>
+                                <option value="">MotorHome</option>
+                                <option value="">Ranger Van</option>
+                                <option value="">Travel Trailer</option>
+                                <option value="">Flying Cloud</option>                              
+                            </select>
+                         </div>  
+                          
+                       </div>
+                       
+                     </div>
+                     
+
+                     
+                     <span>Personal Details</span>
+                 
+                 <div class="lastname-wrapper">    
+                     <div class="name-lastname">
+                            <div class="name-for-form">
+                                <label for="name">First Name</label>
+                                <input class="back-color" type="name" >
+                            </div>
+                    
+                            <div class="name-for-form">
+                                <label for="lastname">Last Name</label>
+                                <input class="back-color" type="lastname">
+                            </div>
+                    </div>
+
+                    <div class="name-lastname">
+                        <div class="name-for-form">
+                            <label for="name">First Name</label>
+                            <input class="back-color" type="name" >
+                        </div>
+                
+                        <div class="name-for-form">
+                            <label for="lastname">Last Name</label>
+                            <input class="back-color" type="lastname">
+                        </div>
+                </div>
+            </div>
+                    
+
+            <input class="forminput" type="submit">
+
+                    </form>
+              </div>
+           </div>
+    
+    
+              <button id="overlay-btn" onclick="openNav()">CHeck Availability</button>
+    
+            </div> 
+        
+        
+
+        </nav>
+            
+
+            <div class="title-one">
+
+                <h1>
+                    <span>RV Rentals
+                    <br> in Califronia
+                   </span>
+                </h1>
+
+
+            </div>
+
+            <div class="title-two">
+                <p>Travel the way you want it</p>
+                <button><a href="">Check Availability</a></button>
+                
+            </div>
+
+         
+      
+    </header>
+
+
+   
+    
+<section class="section-one">
+
+     <div class="section-one-title">
+        <h2>WHY BOOK WITH US</h2>
+     </div>
+
+
+    
+    <div class="section-one-card">
+
+
+            <div class="green-card">
+
+                <div class="road-side">
+
+                
+                <span>Roadside <br> Assistance</span>
+                </div>
+            </div>
+
+    
+     <div class="banner-card-car">
+
+        <div class="car-img">
+            <img src="./image/car-girl.webp" alt="">
+        </div>
+
+        <div class="car-text">
+            <p>Unlimited <br/> Miles</p>
+        </div>
+     </div>
+
+     
+     <div class="card-together">
+
+        <div class="banner-card-mount">
+
+            <div class="mount-img">
+                <img src="./image/mount.webp" alt="">
+            </div>
+    
+            <div class="mount-text">
+                <p>Trip <br>
+                    Advice</p>
+            </div>
+
+        </div>
+
+
+        <div class="orange-card">
+            <div class="orange-card">
+                <span>
+                    No     <br>
+                    Booking <br>
+                    Fees    <br>
+                </span>
+            </div>
+        </div>
+    </div>  
+        
+     
+
+    </div>
+    
+
+</section>
+
+
+<section class="two">
+      
+    <div class="wrapper-section-two">
+
+    
+
+      <div class="logo-ball">
+        <img src="./image/ball.PNG" alt="">
+      </div>
+
+     <div class="two-title">
+        <p>Get to Know Us</p>
+     </div>
+
+     <div class="button-learn">
+        <button class="learn-btn">
+            <a href="#">Learn more</a>
+        </button>
+    
+        </div>
+
+
+    </div>
+
+
+</section>
+  
+    <section class="three">
+        <h2 class="section-title">Book Your Trip in 3 Easy Steps</h2>
+    </section>
+
+
+   <section class="four">
+    <div class="four-wrapper">
+
+        <div class="four-tex">
+         
+         <div class="text-margin">  
+          <div>
+          <span>01</span> <br>
+          <h3>Reserve Your Ride</h3> 
+          <p>I'm a paragraph. Click here to add your own text and <br> edit me. Let your users get to know you.</p>
+         </div>
+
+          <div>
+          <span>02</span>
+          <h3>Plan Your Trip</h3> 
+          <p>I'm a paragraph. Click here to add your own text and <br> edit me. Let your users get to know you.</p>
+          </div>
+
+
+          <div>
+          <span>03</span> <br>
+          <h3>Hit the Road</h3> 
+          <p>I'm a paragraph. Click here to add your own text and <br> edit me. Let your users get to know you.</p>  
+          </div>
+         </div> 
+
+        </div>
+
+
+        <div class="four-img">
+            <img class="image-one" src="./image/sectio-fourth(one).webp" alt="">
+            <img class="image-two" src="./image/fourthe-two.webp" alt="">
+        </div>
+
+
+
+    </div>
+   </section>
+
+
+
+
+   <section class="five">
+      
+    <div class="wrapper-section-five">
+
+    
+
+      <div class="logo-ball-five">
+        <img src="./image/ball.PNG" alt="">
+      </div>
+
+     <div class="five-title">
+        <p>Find Your Next Road Trip</p>
+     </div>
+
+      <div class="button-dicovery">
+        <button class="discovery-btn">
+            <a href="#">Discover Tip Ideas</a>
+        </button>
+    
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<section class="section-six">
+ 
+
+</section>
+
+<!-- seven -->
+
+<section class="seven">
+
+    <div class="seven-title">
+        <h2>What People Say About Us </h2>
+    </div>
+ <!-- for slide -->
+ 
+<div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <p>
+            “I'm a testimonial. Click to edit me and add text that <br>
+             says something nice about you and your services. <br>
+              Let your customers review you and tell their friends <br>
+               how great you are.”
+        </p>
+        <h2>Kim Lexington</h2>
+      </div>
+      <div class="slide">
+        <p>
+            “I'm a testimonial. Click to edit me and add text that <br>
+             says something nice about you and your services. <br>
+              Let your customers review you and tell their friends <br>
+               how great you are.”
+        </p>
+        <h2>Bex Bradley</h2>
+      </div>
+      <div class="slide">
+        <p>
+            “I'm a testimonial. Click to edit me and add text that <br>
+             says something nice about you and your services. <br>
+              Let your customers review you and tell their friends <br>
+               how great you are.”
+        </p>
+        <h2>Bex Bradley</h2>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  
+          
+          
+</section>
+
+
+<section class="eight">
+
+  <div class="wrapper-section-eight">
+
+    <div class="logo-ball-eight">
+        <img src="./image/ball.PNG" alt="">
+      </div>
+
+     <div class="eight-title">
+        <p>Follow Us @dandy.campres</p>
+
+     </div> 
+ </div>
+
+
+
+<!-- nine-section -->
+
+<div class="nine-section">
+    <div class="nine-card">
+
+
+        <div class="card-image">
+            <img src="./image/01.jpg" alt="" >
+
+
+            <div class="card-title">
+                @wix: #wix, #website, 
+                <br>#freewebsite,
+                <br> #websitetemplate, #wix.com, 
+                <br>#camping, #RV, #trip,
+                <br> #outdoor
+            </div>
+        </div>
+
+        <div class="card-image">
+            <img src="./image/02.jpg" alt="" >
+
+
+            <div class="card-title">
+                @wix: #wix, #website, 
+                <br>#freewebsite,
+                <br> #websitetemplate, #wix.com, 
+                <br>#camping, #RV, #trip,
+                <br> #outdoor
+            </div>
+        </div>
+
+
+        <div class="card-image">
+            <img src="./image/03.jpg" alt="" >
+
+
+            <div class="card-title">
+                @wix: #wix, #website, 
+                <br>#freewebsite,
+                <br> #websitetemplate, #wix.com, 
+                <br>#camping, #RV, #trip,
+                <br> #outdoor
+            </div>
+        </div>
+
+        <div class="card-image">
+            <img src="./image/04.jpg" alt="" >
+
+
+            <div class="card-title">
+                @wix: #wix, #website, 
+                <br>#freewebsite,
+                <br> #websitetemplate, #wix.com, 
+                <br>#camping, #RV, #trip,
+                <br> #outdoor
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+
+
+
+<!-- footer -->
+
+<footer >
+
+  <div class="footer-wrapper">
+    <div class="footer-btn">
+         <a href=""><img class="logo" src="./image/logo-footer.PNG" alt=""></a>
+        <button><a href="">Check Availability</a></button>
+
+    </div>
+
+
+<div class="footer-div">
+    
+        <div class="article">
+
+            <p>500 Terry Francine Street</p>
+            <p>San Francisco, CA 94158</p>
+            <p>info@mysite.com</p>
+            <p>123-456-7890</p>        
+            <div class="icon-div">
+                <div class="icon">
+                     <a href="#"><i class="fa-brands fa-facebook "></i></a>
+                     <a href="#"> <i class="fa-brands fa-instagram "></i></a>
+                </div>
+                
+                <p>© 2035 by Dandy Campers. Powered and secured by Wix</p>
+            </div>
+        </div>
+
+          <div class="anchor">
+
+            <div class="achor-ul">
+                
+                <ul>
+                    <li><a href="#">Rvs</a></li>
+                    <li><a href="#">Road Trips</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+                    
+       </div>
+
+</div>
+
+
+  </div>
+  
+<form action="">
+    <h2>Contact Us</h2>
+    <div class="input">
+        <div>
+            <label for="name">First Name</label>
+            <input type="name" >
+        </div>
+
+        <div class="in">
+            <label for="lastname">Last Name</label>
+            <input type="lastname">
+        </div>
+    </div>
+    <div class="input">
+        <div>
+            <label for="Email">Email *</label>
+            <input type="email" >
+        </div>
+
+        <div>
+            <label for="Subject">Subject</label>
+            <input type="Subject">
+        </div>
+        
+    </div>
+
+    <div class="massage">
+        <label for="Message">Message *</label>
+        <input type="Message">
+    </div>
+
+
+        <input class="subinput" type="submit">
+
+
+
+        
+   
+ 
+
+</form>
+
+</footer>
+
+
+ 
+
+    
+
+           
+<script src="./script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+

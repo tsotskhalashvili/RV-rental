@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    
+    <header>
+        <nav> 
+
+            <a href="../index.html"><img class="logo" src="../image/logo.png" alt=""></a>
+            
+            
+            <div class="nav-ul">
+             <ul>
+                <li>
+                    <a id="dropown-chek" href="../rvs/rvs.html">RVs</a>
+                 
+                    <ul class="dropdown">
+                        <li><a href="#">EuroCamper</a></li>
+                        <li><a href="#">vanagon</a></li>
+                        <li><a href="#">Ranger van</a></li>
+                        <li><a href="#">Travel Triler</a></li>
+                        <li><a href="#">Flying Cloud</a></li>
+                        <li><a href="#">MotorHome</a></li>
+                    </ul>
+                </li>  
+
+                <li><a href="../RoadTrip/road.html">Road Trips</a></li>
+                <li><a href="../FAQ/faq.html">FAQ</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            
+
+            
+            <div id="myNav" class="overlay">
+              
+                <div class="overlay-btn-title">
+                   <span class="camper-check-btn">CHeck Availability</span>
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                   <div class="overlay-content">
+   
+                            <span class="travel-first">Travel Details</span>
+                  
+                       <form class="form-btn" action="">
+                        <div class="wrapper-for-form">
+                           <div class="select-wrapper">
+                           <div class="pick-up">
+                           
+                           <label for="nav-select">Pick up*</label>
+                           <select class="nav-select">
+                               <option value=""></option>
+                               <option>San Diego</option>
+                               <option>malibu Beach</option>
+                               <option>Misson Bay</option>
+                               <option>Napa Valley</option>
+                           </select>
+                       </div>
+                            
+                       <div class="drop-off">
+                           <label for="nav-select">Drop Off*</label>
+                           <select class="nav-select">
+                               <option value=""></option>
+                               <option>San Diego</option>
+                               <option>malibu Beach</option>
+                               <option>Misson Bay</option>
+                               <option>Napa Valley</option>
+                           </select>
+                       </div>   
+                       </div>
+                            
+                         <div class="date">
+                            <div class="for-date">
+                           <label for="date">Start Date*</label>
+                           <input name="date" type="date">
+                            </div>
+                            
+                            <div class="for-date">
+                           <label for="date">End Date*</label>
+                           <input name="date" type="date">
+                            </div>
+                         </div>
+                            
+   
+   
+                          <div class="number">
+                               <div class="for-number">
+                                   <label for="number">Number of passenger*</label>
+                                   <input name="number" type="number">
+                               </div>
+   
+                            <div class="for-number-rvs">
+                               <label class="rvs-one" for="rvs">Rv Type</label>
+                               <select  name="rvs" id="">
+                                   <option value=""></option>
+                                   <option value="">EuroCamper</option>
+                                   <option value="">Vanagon</option>
+                                   <option value="">MotorHome</option>
+                                   <option value="">Ranger Van</option>
+                                   <option value="">Travel Trailer</option>
+                                   <option value="">Flying Cloud</option>                              
+                               </select>
+                            </div>  
+                             
+                          </div>
+                          
+                        </div>
+                        
+   
+                        
+                        <span>Personal Details</span>
+                    
+                    <div class="lastname-wrapper">    
+                        <div class="name-lastname">
+                               <div class="name-for-form">
+                                   <label for="name">First Name</label>
+                                   <input type="name" >
+                               </div>
+                       
+                               <div class="name-for-form">
+                                   <label for="lastname">Last Name</label>
+                                   <input type="lastname">
+                               </div>
+                       </div>
+   
+                       <div class="name-lastname">
+                           <div class="name-for-form">
+                               <label for="name">First Name</label>
+                               <input type="name" >
+                           </div>
+                   
+                           <div class="name-for-form">
+                               <label for="lastname">Last Name</label>
+                               <input type="lastname">
+                           </div>
+                   </div>
+               </div>
+                       
+   
+               <input class="forminput" type="submit">
+   
+                       </form>
+                 </div>
+              </div>
+       
+       
+                 <button id="overlay-btn" onclick="openNav()">CHeck Availability</button>
+       
+               </div> 
+        
+        
+
+        </nav>
+            
+
+        <div class="faq-title">
+            <h1>Our Story</h1>
+            <span>I'm a paragraph. Click here to add your own text and edit me. <br> Let your users get to know you.</span>
+        </div>
+
+    </header>
+
+    <section class="section-for-about">
+     
+     <div class="about-title-wrapper">
+         <div class="about-us">
+                <div class="about-side">
+                  <span>About Us</span>
+                </div>
+        </div>
+
+       <div class="about-us-title">
+        <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+            Just click “Edit Text” or double click me to add your own content and make changes to the font.
+            Feel free to drag and drop me anywhere you like on your page. I’m a great place for you
+            to tell a story and let your users know a little more about you. 
+        </p>
+
+        <p class="title-abou-second">
+            This is a great space to write a long text about your company and your services. 
+            You can use this space to go into a little more detail about your company.
+            Talk about your team and what services you provide. 
+            Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. 
+            Make your company stand out and show your visitors who you are.
+        </p>
+       </div>
+
+     </div>
+     
+     <div class="about-img-wrapper">
+
+        <div class="about-img-one">
+            <img src="./image/first-about.webp" alt="">
+        </div>
+
+        <div class="about-img-two">
+            <img src="./image/second-about.webp" alt="">
+        </div>
+     </div>
+
+    </section>
+
+
+     <section class="company-map">
+        <div class="company-map-title">
+            <p>Our Company Headquarters</p>
+        </div>
+     </section>
+
+
+     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12614.578527134014!2d-122.419415!3d37.77493!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1720281325799!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+     <!-- footer -->
+
+<footer >
+
+    <div class="footer-wrapper">
+      <div class="footer-btn">
+           <a href=""><img class="logo" src="../image/logo-footer.PNG" alt=""></a>
+          <button><a href="">Check Availability</a></button>
+  
+      </div>
+  
+  
+  <div class="footer-div">
+      
+          <div class="article">
+  
+              <p>500 Terry Francine Street</p>
+              <p>San Francisco, CA 94158</p>
+              <p>info@mysite.com</p>
+              <p>123-456-7890</p>        
+          </div>
+  
+            <div class="anchor">
+  
+              <div class="achor-ul">
+                  
+                  <ul>
+                      <li><a href="#">Rvs</a></li>
+                      <li><a href="#">Road Trips</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">About</a></li>
+                  </ul>
+              </div>
+                      
+         </div>
+  
+  </div>
+  
+  <div class="icon-div">
+      <div class="icon">
+           <a href="#"><i class="fa-brands fa-facebook "></i></a>
+           <a href="#"> <i class="fa-brands fa-instagram "></i></a>
+      </div>
+      
+      <p>© 2035 by Dandy Campers. Powered and secured by Wix</p>
+  </div>
+    </div>
+    
+  <form action="">
+      <h2>Contact Us</h2>
+      <div class="input">
+          <div>
+              <label for="name">First Name</label>
+              <input type="name" >
+          </div>
+  
+          <div class="in">
+              <label for="lastname">Last Name</label>
+              <input type="lastname">
+          </div>
+      </div>
+      <div class="input">
+          <div>
+              <label for="Email">Email *</label>
+              <input type="email" >
+          </div>
+  
+          <div>
+              <label for="Subject">Subject</label>
+              <input type="Subject">
+          </div>
+          
+      </div>
+  
+      <div class="massage">
+          <label for="Message">Message *</label>
+          <input type="Message">
+      </div>
+  
+  
+          <input class="subinput" type="submit">
+     
+   
+  
+  </form>
+  
+  </footer>
+  
+        
+<script src="./about.js"></script>    
+</body>
+</html>

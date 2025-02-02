@@ -1,0 +1,652 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+    
+}
+
+.fa-solid{
+    display: none;
+}
+
+header{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("./image-rvs/rvs-header.webp");
+    object-fit: cover;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background:transparent;
+    background-color: rgb(0,0,0,0.6);
+    z-index: 1;
+    
+
+}
+
+.logo{
+    width: 297px;
+    
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  
+}
+
+ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul a{
+    color: white;
+    font-size: large;
+    
+}
+
+ul a:hover{
+    color: aquamarine ;
+    transition: 0.5s;
+}
+
+/* dropdown */
+#dropown-chek{
+    padding: 25px 10px 25px 10px;
+}
+
+.dropdown li{
+    display: block;
+}
+
+.dropdown{
+
+    margin-top: 20px;
+    margin-left: -55px;
+    width: 115px;
+    height: 190px;
+    background: transparent;
+    background-color: rgb(0,0,0,0.6);
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+
+}
+
+.nav-ul li:hover ul.dropdown{
+    display: block;
+    
+    
+    
+}
+
+/* nav */
+
+
+/* overlay */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #277C52;
+    overflow-y: scroll;
+    transition: 0.5s;
+    
+  }
+
+  .overlay::-webkit-scrollbar{
+    display: none;
+  }
+
+
+
+  /* form */
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;    
+    height: 120vh;
+    
+  }
+
+
+.overlay-content span{
+    font-size: 20px;
+    color: white;
+    margin-left: 250px;
+    margin-top: 20px;
+    
+}
+
+.nav-select{
+    width: 300px;
+    height: 50px;
+    background-color: #277C52;
+    font-size: 20px;
+    color: white;
+
+}
+
+.form-btn{
+    width: 50%;
+}
+
+.form-btn input,select{
+    background-color: #1F6340 !important ; 
+    border-bottom: 2px solid white;
+}
+
+
+.select-wrapper{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+
+
+
+
+
+.date{
+    display: flex;
+    gap: 30px;
+}
+
+.date input{
+    width: 300px;
+    height: 50px;
+    background-color: #277C52;
+    color: white;
+    font-size: 20px;
+}
+
+.date label{
+    color: white;
+}
+
+
+.for-number input{
+    width: 300px;
+    height: 50px;
+    background-color: #277C52;
+    color: white;
+    font-size: 20px
+}
+
+.for-number{
+    color: white;
+}
+ 
+.for-number-rvs select{
+    width: 400px;
+    height: 50px;
+    background-color: #277C52;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.rvs-one{
+    color: white;
+}
+
+.number{
+    display: flex;
+    gap: 30px;
+}
+
+
+.wrapper-for-form{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    
+    margin-left: 90%;
+}
+
+
+.name-for-form input{
+    width: 300px;
+    height: 50px;
+    background-color: #277C52;
+    color: white;
+    font-size: 20px;
+   
+
+}
+
+.name-for-form label{
+    color: white;
+}
+
+
+.name-lastname{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.lastname-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    margin-top: 50px;
+    margin-left: 90%;
+}
+
+.forminput{
+width: 150px;
+border: none;
+border-radius: 60px;
+height: 60px;
+background-color: white !important;
+cursor: pointer;
+font-size: 20px;
+color: black;
+position: relative;
+margin-left: 50em;
+margin-top: 30px;
+}
+
+.forminput:hover{
+    background-color: rgb(233, 233, 179);
+}
+
+  .camper-check-btn{
+    color: white;
+    font-size: 40px;
+    
+  }
+
+.overlay-btn-title{
+    margin: 34px;
+    margin-left: 15rem;
+}
+
+ 
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+   
+  }
+
+  #overlay-btn{
+    position: relative;
+    width: 173px;
+    height: 45px;
+    border-radius:20px;
+    background-color: transparent;
+    border: 2px solid  white;
+    color: white;
+    font-size: 1em;
+}
+
+#overlay-btn:hover{
+  background-color: #277C52;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.title-wrapper{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-one{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.title-one span{
+    font-size: 80px;
+    font-weight: 750;
+}
+
+.title-one{
+    font-size: 20px;
+    width: 29rlh
+}
+
+
+
+
+/* first-section */
+
+
+.first-section{
+    margin-top: 100px;
+    margin-left: 100px;  
+}
+
+.first-section-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.card-rvs img{
+    width: 315px;
+    height: 315px;   
+    margin-top: 100px;
+    
+    
+}
+
+.card-title-rvs{
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.img-rvs-hover{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.rvs-picture{
+    transition: all 0.5s;
+}
+
+.rvs-picture:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* section-second */
+
+.second{
+    margin-top: 200px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+
+.trip-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.trip-btn {
+    width: 230px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #277C52;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.two-title{
+    font-size: 40px;
+}
+
+.trip-btn:hover{
+    background-color: rgb(2, 48, 2);
+    transition: all 0.2s;
+}
+
+/* second title */
+ 
+
+.second-wrapper{
+    display: flex;
+    
+}
+
+.wrapper-section-second{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    
+}
+
+
+
+.second-title{
+    font-size: 40px;
+    margin-top: 10px;
+ 
+}
+
+
+
+.faq-btn a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.faq-btn{
+    width: 200px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #277C52;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.faq-btn:hover{
+    background-color: rgb(2, 48, 2);
+    transition: all 0.2s;
+}
+
+
+/* footer */
+
+
+footer{
+    margin-top: 150px;
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+
+.footer-btn button{
+    width: 220px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #277C52;
+    border: 2px solid white;
+
+}
+
+
+.footer-btn button:hover{
+    background-color: rgb(2, 48, 2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+nav i {
+    display:none;
+}
+
+
+
+.footer-btn button a{
+    color: white;
+    font-size: larger;
+}
+
+.footer-btn img{
+ width: 200px;
+}
+
+.footer-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 500Px;
+    height: 120px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    font-size: 20px;
+}
+.anchor ul li a{
+    color: black;
+   
+}
+.anchor ul {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+.footer-div{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.fa-brands{
+    font-size: 30px;
+    padding-top: 10px;  
+    
+}
+
+.icon a{
+    color: black;
+}
+
+.icon-div{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input{
+    display: flex;
+    gap: 20%;
+    width: 100%;
+}
+
+.input input{
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+form{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+form h2{
+    font-size: 40px;
+}
+
+.massage input{
+    width: 100%;
+    padding: 40px;
+}
+
+form input{
+    outline: none;
+}
+
+.subinput{
+width: 160px;
+border: none;
+border-radius: 60px;
+height: 60px;
+background-color: #277C52;
+cursor: pointer;
+font-size: 20px;
+color: white;
+}
+
+
+
+.subinput:hover{
+    background-color: rgb(2, 48, 2);
+
+}

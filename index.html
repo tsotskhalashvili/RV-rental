@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RV Rentals in California | Dandy Campers</title>
+    <meta name="description" content="Rent a camper van or motorhome in California. Roadside assistance, unlimited miles and easy online booking with Dandy Campers.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dandy Campers">
+    <meta property="og:title" content="RV Rentals in California | Dandy Campers">
+    <meta property="og:description" content="Rent a camper van or motorhome in California. Roadside assistance, unlimited miles and easy online booking with Dandy Campers.">
+    <meta name="theme-color" content="#2b7a4b">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
     <link rel="stylesheet" href="./rcponcive.css">
+    <link rel="preload" as="image" href="./image/camping-mobile.webp" media="(max-width: 768px) and (orientation: portrait)" fetchpriority="high">
+    <link rel="preload" as="image" href="./image/camping.webp" media="(min-width: 769px), (orientation: landscape)" fetchpriority="high">
+    <style>@media (max-width: 768px) and (orientation: portrait) { header { background-image: url(./image/camping-mobile.webp); } }</style>
 </head>
 <body>
 
     <header>
         <nav> 
 
-            <a href=""><img class="logo" src="./image/logo.png" alt=""></a>
+            <a href="./index.html" aria-label="Dandy Campers home"><img class="logo" src="./image/logo.png" alt="Dandy Campers RV Rentals logo"></a>
             
            <i id="toggleMenu"><i class="fa-solid fa-bars"></i></i>
      
@@ -32,12 +42,12 @@
                     <a id="dropown-chek" href="./rvs/rvs.html">RVs</a>
                  
                     <ul class="dropdown">
-                        <li><a href="#">EuroCamper</a></li>
-                        <li><a href="#">vanagon</a></li>
-                        <li><a href="#">Ranger van</a></li>
-                        <li><a href="#">Travel Triler</a></li>
-                        <li><a href="#">Flying Cloud</a></li>
-                        <li><a href="#">MotorHome</a></li>
+                        <li><a href="./rvs/rvs.html">EuroCamper</a></li>
+                        <li><a href="./rvs/rvs.html">vanagon</a></li>
+                        <li><a href="./rvs/rvs.html">Ranger van</a></li>
+                        <li><a href="./rvs/rvs.html">Travel Triler</a></li>
+                        <li><a href="./rvs/rvs.html">Flying Cloud</a></li>
+                        <li><a href="./rvs/rvs.html">MotorHome</a></li>
                     </ul>
                 </li>  
 
@@ -50,7 +60,7 @@
               
              <div class="overlay-btn-title">
                 <span class="camper-check-btn">CHeck Availability</span>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" role="button" aria-label="Close" class="closebtn" onclick="closeNav()">&times;</a>
              </div>
                 <div class="overlay-content">
 
@@ -62,7 +72,7 @@
                         <div class="pick-up">
                         
                         <label for="nav-select">Pick up*</label>
-                        <select class="nav-select back-color">
+                        <select aria-label="Pick-up location" class="nav-select back-color">
                             <option value=""></option>
                             <option>San Diego</option>
                             <option>malibu Beach</option>
@@ -73,7 +83,7 @@
                          
                     <div class="drop-off">
                         <label for="nav-select ">Drop Off*</label>
-                        <select class="nav-select back-color">
+                        <select aria-label="Drop-off location" class="nav-select back-color">
                             <option value=""></option>
                             <option>San Diego</option>
                             <option>malibu Beach</option>
@@ -86,12 +96,12 @@
                       <div class="date">
                          <div class="for-date">
                         <label for="date">Start Date*</label>
-                        <input class="back-color" name="date" type="date">
+                        <input aria-label="Date" class="back-color" name="date" type="date">
                          </div>
                          
                          <div class="for-date">
                         <label for="date">End Date*</label>
-                        <input class="back-color" name="date" type="date">
+                        <input aria-label="Date" class="back-color" name="date" type="date">
                          </div>
                       </div>
                          
@@ -100,12 +110,12 @@
                        <div class="number">
                             <div class="for-number">
                                 <label for="number">Number of passenger*</label>
-                                <input class="back-color" name="number" type="number">
+                                <input aria-label="Number of travellers" class="back-color" name="number" type="number">
                             </div>
 
                          <div class="for-number-rvs">
                             <label class="rvs-one" for="rvs">Rv Type</label>
-                            <select class="back-color"  name="rvs" id="">
+                            <select aria-label="RV type" class="back-color"  name="rvs" id="">
                                 <option value=""></option>
                                 <option value="">EuroCamper</option>
                                 <option value="">Vanagon</option>
@@ -128,24 +138,24 @@
                      <div class="name-lastname">
                             <div class="name-for-form">
                                 <label for="name">First Name</label>
-                                <input class="back-color" type="name" >
+                                <input aria-label="First name" class="back-color" type="name" >
                             </div>
                     
                             <div class="name-for-form">
                                 <label for="lastname">Last Name</label>
-                                <input class="back-color" type="lastname">
+                                <input aria-label="Last name" class="back-color" type="lastname">
                             </div>
                     </div>
 
                     <div class="name-lastname">
                         <div class="name-for-form">
                             <label for="name">First Name</label>
-                            <input class="back-color" type="name" >
+                            <input aria-label="First name" class="back-color" type="name" >
                         </div>
                 
                         <div class="name-for-form">
                             <label for="lastname">Last Name</label>
-                            <input class="back-color" type="lastname">
+                            <input aria-label="Last name" class="back-color" type="lastname">
                         </div>
                 </div>
             </div>
@@ -180,13 +190,14 @@
 
             <div class="title-two">
                 <p>Travel the way you want it</p>
-                <button><a href="">Check Availability</a></button>
+                <button><a href="./rvs/rvs.html">Check Availability</a></button>
                 
             </div>
 
          
       
     </header>
+<main style="display: contents">
 
 
    
@@ -215,7 +226,7 @@
      <div class="banner-card-car">
 
         <div class="car-img">
-            <img src="./image/car-girl.webp" alt="">
+            <img loading="lazy" decoding="async" src="./image/car-girl.webp" alt="Traveller sitting on the roof of a camper van">
         </div>
 
         <div class="car-text">
@@ -229,7 +240,7 @@
         <div class="banner-card-mount">
 
             <div class="mount-img">
-                <img src="./image/mount.webp" alt="">
+                <img loading="lazy" decoding="async" src="./image/mount.webp" alt="Camper van parked below a mountain">
             </div>
     
             <div class="mount-text">
@@ -266,7 +277,7 @@
     
 
       <div class="logo-ball">
-        <img src="./image/ball.PNG" alt="">
+        <img loading="lazy" decoding="async" src="./image/ball.PNG" alt="">
       </div>
 
      <div class="two-title">
@@ -321,8 +332,8 @@
 
 
         <div class="four-img">
-            <img class="image-one" src="./image/sectio-fourth(one).webp" alt="">
-            <img class="image-two" src="./image/fourthe-two.webp" alt="">
+            <img loading="lazy" decoding="async" class="image-one" src="./image/sectio-fourth(one).webp" alt="Camper van interior">
+            <img loading="lazy" decoding="async" class="image-two" src="./image/fourthe-two.webp" alt="Camper van on a forest road">
         </div>
 
 
@@ -340,7 +351,7 @@
     
 
       <div class="logo-ball-five">
-        <img src="./image/ball.PNG" alt="">
+        <img loading="lazy" decoding="async" src="./image/ball.PNG" alt="">
       </div>
 
      <div class="five-title">
@@ -420,7 +431,7 @@
   <div class="wrapper-section-eight">
 
     <div class="logo-ball-eight">
-        <img src="./image/ball.PNG" alt="">
+        <img loading="lazy" decoding="async" src="./image/ball.PNG" alt="">
       </div>
 
      <div class="eight-title">
@@ -438,7 +449,7 @@
 
 
         <div class="card-image">
-            <img src="./image/01.jpg" alt="" >
+            <img loading="lazy" decoding="async" src="./image/01.webp" alt="Camper van on the coast at sunset" >
 
 
             <div class="card-title">
@@ -451,7 +462,7 @@
         </div>
 
         <div class="card-image">
-            <img src="./image/02.jpg" alt="" >
+            <img loading="lazy" decoding="async" src="./image/02.webp" alt="Friends camping next to their RV" >
 
 
             <div class="card-title">
@@ -465,7 +476,7 @@
 
 
         <div class="card-image">
-            <img src="./image/03.jpg" alt="" >
+            <img loading="lazy" decoding="async" src="./image/03.webp" alt="Motorhome on a mountain road" >
 
 
             <div class="card-title">
@@ -478,7 +489,7 @@
         </div>
 
         <div class="card-image">
-            <img src="./image/04.jpg" alt="" >
+            <img loading="lazy" decoding="async" src="./image/04.webp" alt="Camper van at a lakeside campsite" >
 
 
             <div class="card-title">
@@ -500,12 +511,13 @@
 
 <!-- footer -->
 
+</main>
 <footer >
 
   <div class="footer-wrapper">
     <div class="footer-btn">
-         <a href=""><img class="logo" src="./image/logo-footer.PNG" alt=""></a>
-        <button><a href="">Check Availability</a></button>
+         <a href=""><img loading="lazy" decoding="async" class="logo" src="./image/logo-footer.PNG" alt="Dandy Campers logo"></a>
+        <button><a href="./rvs/rvs.html">Check Availability</a></button>
 
     </div>
 
@@ -552,30 +564,30 @@
     <div class="input">
         <div>
             <label for="name">First Name</label>
-            <input type="name" >
+            <input aria-label="First name" type="name" >
         </div>
 
         <div class="in">
             <label for="lastname">Last Name</label>
-            <input type="lastname">
+            <input aria-label="Last name" type="lastname">
         </div>
     </div>
     <div class="input">
         <div>
             <label for="Email">Email *</label>
-            <input type="email" >
+            <input aria-label="Email" type="email" >
         </div>
 
         <div>
             <label for="Subject">Subject</label>
-            <input type="Subject">
+            <input aria-label="Subject" type="Subject">
         </div>
         
     </div>
 
     <div class="massage">
         <label for="Message">Message *</label>
-        <input type="Message">
+        <input aria-label="Message" type="Message">
     </div>
 
 
